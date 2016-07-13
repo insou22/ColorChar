@@ -53,4 +53,8 @@ public final class ColorChar {
         return Objects.equals(a, b) || strip(a).equals(strip(b));
     }
 
+    private ColorChar() {
+        throw new IllegalStateException("ColorChar cannot be instantiated!");
+    }
+
 }
